@@ -7,6 +7,13 @@ vim.g.mapleader = " "
 vim.cmd.colorscheme("greyscale")
 -- vim.cmd.colorscheme("eclipse")
 
+-- Enable transparency
+vim.cmd("highlight Normal guibg=NONE ctermbg=NONE")
+vim.cmd("highlight NormalNC guibg=NONE ctermbg=NONE")
+vim.cmd("highlight FloatBorder guibg=NONE ctermbg=NONE")
+vim.cmd("highlight NormalFloat guibg=NONE ctermbg=NONE")
+
+
 local opt = vim.opt
 
 opt.number = true 		    -- line numbers
